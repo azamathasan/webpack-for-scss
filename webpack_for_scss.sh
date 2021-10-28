@@ -24,11 +24,13 @@ echo "***********************END package.json**************************"
 
 
 
-# create folders and files (scss and css)
+# create folders and files (js,scss and css)
 echo "***********************create folders and files (scss and css)******************"
 mkdir scss
 touch ./scss/style.scss
 mkdir css
+mkdir js
+touch ./js/entry.js
 echo "***********************END create folders and files (scss and css)******************"
 
 
@@ -49,9 +51,14 @@ const miniCss = require('mini-css-extract-plugin');
 module.exports = {
     mode: 'production',
     // entry: './src/index.js',
-    entry: './scss/style.scss',  // entry file; it can be index.js with scss-import
+    //entry: './scss/style.scss',  // entry file; it can be index.js with scss-import
+    entry: {
+         scss: './scss/style.scss',  // entry file; it can be index.js with scss-import
+         bundle: './js/entry.js',
+	   },
     output: {
-       filename: 'bundle.js', //output file; must have for webpack
+       filename: '[name].js',
+    //   filename: 'bundle_for_webpack.js', //output file; must have for webpack
     //    filename: 'style.css',
        path: path.resolve(__dirname, './js/')  // path for output-file
     },
@@ -81,4 +88,4 @@ echo  "************************END webpack.config.js**************************"
 echo "************************npm run build***********************"
 npm run build
 echo "************************END npm run build***********************"
-# npm run start - 
+# npm run start
