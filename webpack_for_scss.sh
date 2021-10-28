@@ -51,7 +51,7 @@ module.exports = {
     // entry: './src/index.js',
     entry: './scss/style.scss',  // entry file; it can be index.js with scss-import
     output: {
-       filename: 'bundle_for_webpack.js', //output file; must have for webpack
+       filename: 'bundle.js', //output file; must have for webpack
     //    filename: 'style.css',
        path: path.resolve(__dirname, './js/')  // path for output-file
     },
