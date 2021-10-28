@@ -6,6 +6,8 @@ For working:
 - download webpack_for_scss.sh
 - run `./webpack_for_scss.sh`
 
+After successfully completed you can type `npm run build` for one-time execution or `npm run start` for start webpack with **_--watch_**-option.
+
 There are next folders and files:
 - **package.json** - important information about the project
 - **webpack.config.js** - configuration file for webpack
