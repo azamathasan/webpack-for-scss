@@ -14,6 +14,6 @@ There are next folders and files:
 - **js** - folder that contains entry and output js-files:
   - **entry.js** - entry file for webpack-bundle, you can import your js-files to this file
   - **scss.js** - output for scss; this file exist because we have two entry-files - **style.scss** and **entry.js**; you don't have to use scss.js
-  - **bundle.js** - webpack bundle-file; you can include this file to your project (for example, in **html**-file)
+  - **bundle.js** - webpack bundle-file; you can include this file to your project (for example, in **index.html**-file)
 - **scss-filder** - folder for scss; there is the entry file **style.scss** and you can write your scss-code to this file
-- **css** - folder for css; there is the output file **style.css** and you can include this file to your project (for example, in **html**-file)
+- **css** - folder for css; there is the output file **style.css** and you can include this file to your project (for example, in **index.html**-file)
